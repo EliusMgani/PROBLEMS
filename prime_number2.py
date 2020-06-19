@@ -1,0 +1,10 @@
+# create a python program to print all prime numbers within a given range
+r = int(input("Enter the Upper Limit of a Range: "))
+for a in range(2, r+1):
+   k = 0
+   for i in range(2, a//2+1):
+      if(a%i==0):
+         k = k+1
+   if(k<=0):
+      print(a)
+print()
